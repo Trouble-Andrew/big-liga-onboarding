@@ -1,0 +1,26 @@
+.logo {
+  display: flex;
+
+  &__left,
+  &__right {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+}
+
+.logo__main svg {
+  min-width: 80px;
+  height: auto;
+  margin: 0 30px;
+}
+
+.logo__left svg,
+.logo__right svg {
+  width: auto;
+  height: 100px;
+
+  @include viewport--md {
+    height: 80px;
+  }
+}

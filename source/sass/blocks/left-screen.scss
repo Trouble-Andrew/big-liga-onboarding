@@ -1,0 +1,30 @@
+.left-screen {
+  padding: 0 40px;
+
+  @include viewport--lg {
+    padding: 0 32px;
+  }
+
+  @include viewport--sm {
+    padding: 0 16px;
+  }
+
+  @include viewport--md {
+    position: fixed;
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+  }
+}
+
+.left-screen__subtitle {
+  color: $color-neon-blue;
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: 400;
+  margin: 0;
+}

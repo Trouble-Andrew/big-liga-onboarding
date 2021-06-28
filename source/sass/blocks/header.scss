@@ -1,3 +1,21 @@
 .header {
+  background-color: $color-default-white;
   display: block;
+  padding-top: 20px;
+
+  & .logo__main svg {
+    min-width: 20px;
+    height: 35px;
+    margin: 0 10px;
+  }
+
+  & .logo__left svg,
+  .logo__right svg {
+    width: auto;
+    height: 30px;
+
+    @include viewport--md {
+      // height: 80px;
+    }
+  }
 }

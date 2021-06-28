@@ -1,0 +1,23 @@
+.main-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url('../../img/svg/A.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  @include viewport--md {
+    background: none;
+  }
+}
+
+.main-screen__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include viewport--md {
+    // flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,30 @@
+.first-screen {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: bisque;
+  transition: 0.4s ease-out;
+}
+
+.first-screen__container {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-screen__button {
+  position: absolute;
+  bottom: 20vh;
+  border: none;
+  background: none;
+  font-size: 24px;
+  line-height: 22px;
+}

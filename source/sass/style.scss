@@ -1,24 +1,28 @@
 // Vendor
 //---------------------------------
 
-@import "vendor/normalize";
+@import 'vendor/normalize';
 // @import "vendor/swiper";
 
 // Global
 //---------------------------------
 
-@import "variables";
-@import "mixins";
-@import "global/fonts";
-@import "global/reboot";
-@import "global/utils";
-@import "global/container";
+@import 'variables';
+@import 'mixins';
+@import 'global/fonts';
+@import 'global/reboot';
+@import 'global/utils';
+@import 'global/container';
 
 // Blocks
 //---------------------------------
 
-@import "blocks/header";
-
+@import 'blocks/first-screen';
+@import 'blocks/logo';
+@import 'blocks/header';
+@import 'blocks/main-screen';
+@import 'blocks/left-screen';
+@import 'blocks/right-screen';
 
 // используйте это для отключения ховеров на тач устройствах
 // ! но не используйте это для текстовых полей ( input, textarea )
