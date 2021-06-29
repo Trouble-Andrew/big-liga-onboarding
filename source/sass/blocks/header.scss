@@ -2,6 +2,14 @@
   background-color: $color-default-white;
   display: block;
   padding-top: 20px;
+  padding-bottom: 10px;
+  z-index: 10;
+
+  & .logo__main,
+  & .logo__left,
+  & .logo__right {
+    opacity: 1;
+  }
 
   & .logo__main svg {
     min-width: 20px;
@@ -18,4 +26,9 @@
       // height: 80px;
     }
   }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-start;
 }

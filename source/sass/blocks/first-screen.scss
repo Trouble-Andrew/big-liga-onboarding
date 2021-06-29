@@ -1,14 +1,14 @@
 .first-screen {
   position: fixed;
+  z-index: 15;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   width: 100vw;
   height: 100vh;
 
-  background-color: bisque;
+  background-color: $color-default-white;
   transition: 0.4s ease-out;
 }
 
@@ -27,4 +27,8 @@
   background: none;
   font-size: 24px;
   line-height: 22px;
+  cursor: pointer;
+
+  transition: 0.4s ease-out;
+  opacity: 0;
 }

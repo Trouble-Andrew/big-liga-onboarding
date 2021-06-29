@@ -1,7 +1,7 @@
 .right-screen {
   margin-top: -80px;
   padding: 0 40px;
-  transition: 0.4s ease-out;
+  transition: 0.4s ease-out, background 0s ease-out;
 
   @include viewport--lg {
     padding: 0 32px;
@@ -29,17 +29,26 @@
 .right-screen__img {
   margin-bottom: 20px;
 
-  & svg {
+  & #lightning-1,
+  & #lightning-2,
+  & #lightning-3,
+  & #lightning-4 {
     @include viewport--md {
       fill: $color-default-white;
     }
   }
 
-  & path {
-    @include viewport--md {
-      fill: $color-default-white;
-    }
-  }
+  // & svg {
+  //   @include viewport--md {
+  //     fill: $color-default-white;
+  //   }
+  // }
+
+  // & path {
+  //   @include viewport--md {
+  //     fill: $color-default-white;
+  //   }
+  // }
 }
 
 .right-screen__text {

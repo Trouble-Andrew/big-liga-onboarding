@@ -1,18 +1,24 @@
 .logo {
   display: flex;
+  z-index: 5;
 
   &__left,
   &__right {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    z-index: 5;
+    opacity: 0;
   }
 }
 
-.logo__main svg {
-  min-width: 80px;
-  height: auto;
-  margin: 0 30px;
+.logo__main {
+  transition: 0.6s ease-out;
+  z-index: 10;
+  opacity: 0;
+
+  & svg {
+    min-width: 80px;
+    height: auto;
+    margin: 0 30px;
+  }
 }
 
 .logo__left svg,
@@ -23,4 +29,16 @@
   @include viewport--md {
     height: 80px;
   }
+}
+
+.tilt-in-fwd-tr {
+  -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.tilt-in-fwd-tl {
+  -webkit-animation: tilt-in-fwd-tl 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-fwd-tl 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
