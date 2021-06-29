@@ -3,26 +3,27 @@ import { iosVhFix } from './utils/ios-vh-fix';
 
 import { initModals } from './modules/init-modals';
 import { initFirstScreen } from './modules/init-first-screen';
+import { toggleScreen } from './modules/toggle-screen';
 
 // Utils
 // ---------------------------------
 
 ieFix();
 iosVhFix();
-initFirstScreen();
 
 // Modules
 // ---------------------------------
 
 initModals();
+initFirstScreen();
+toggleScreen();
 
-const leftScreen = document.querySelector('.left-screen');
-const rightScreen = document.querySelector('.right-screen');
+const button = document.querySelector('.first-screen__button');
 
-leftScreen.addEventListener('click', () => {
-  rightScreen.classList.add('right-screen--visible');
-});
-
-rightScreen.addEventListener('click', () => {
-  rightScreen.classList.remove('right-screen--visible');
+window.addEventListener('resize', () => {
+  if (document.documentElement.clientWidth <= 768) {
+    button.innerHTML = 'Кликните на экран';
+  } else {
+    button.innerHTML = 'Нажмите на Enter';
+  }
 });

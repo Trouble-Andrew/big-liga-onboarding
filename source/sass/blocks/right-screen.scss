@@ -33,6 +33,9 @@
   & #lightning-2,
   & #lightning-3,
   & #lightning-4 {
+    // stroke-dasharray: 100;
+    // animation: vibrate 1s infinite linear;
+
     @include viewport--md {
       fill: $color-default-white;
     }
