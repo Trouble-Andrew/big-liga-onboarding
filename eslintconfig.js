@@ -1,5 +1,6 @@
 module.exports = {
-  extends: ['htmlacademy/es6'],
+  extends: ['htmlacademy/es6',
+    "prettier"],
   rules: {
     'comma-dangle': ['error', {
       'arrays': 'never',
