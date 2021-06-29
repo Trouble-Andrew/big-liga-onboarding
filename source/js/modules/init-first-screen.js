@@ -1,4 +1,4 @@
-import { animateMascot } from './animateMascot';
+import { animateMascot } from './animate-mascot';
 
 const firstScreen = document.querySelector('.first-screen');
 const mainScreen = document.querySelector('.main-screen');
@@ -18,7 +18,7 @@ const nextScreen = () => {
   window.removeEventListener('keydown', nextScreenEnter);
 };
 
-const nextScreenEnter = () => {
+const nextScreenEnter = (event) => {
   if (event.keyCode === 13) {
     nextScreen();
   }
