@@ -20,10 +20,16 @@ toggleScreen();
 
 const button = document.querySelector('.first-screen__button');
 
-window.addEventListener('resize', () => {
+const changeButtonText = () => {
   if (document.documentElement.clientWidth <= 768) {
     button.innerHTML = 'Кликните на экран';
   } else {
     button.innerHTML = 'Нажмите на Enter';
   }
+}
+
+changeButtonText();
+
+window.addEventListener('resize', () => {
+  changeButtonText();
 });
